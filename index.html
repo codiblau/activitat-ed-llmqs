@@ -33,15 +33,23 @@
     <h1>Índex</h1>
     <p>Hola món</p>
     <form action="https://theteacher.codiblau.com/llmqs/practica/contacte" method="post">
-        <label for="nom">Nom</label>
-        <input type="text" id="nom" name="password">
-        <input type="color" name="fons">
-        <input type="text" name="tamany">
-        <input type="text" name="missatge">
+        <label for="colorfons">Color de fons</label>
+        <input type="color" id="colorfons" name="fons">
 
-        <label for="email">Email</label>
-        prova
-        <input type="submit" value="Enviar">
+        <label>Tamany de la lletra</label>
+        <!--input type="radio" name="tamany" value="GRAN">Gran
+        <input type="radio" name="tamany" value="PETIT">Petit-->
+
+        <select name="tamany">
+            <option value="GRAN">Lletra gran</option>
+            <option value="PETIT">Lletra petita</option>
+        </select>
+
+        <label for="message">Missatge</label>
+        <!--input type="text" id="missatge" name="missatge"-->
+        <textarea name="missatge" id="message"></textarea>
+
+        <input type="submit" value="Enviar formulari">
     </form>
 
 </body>
