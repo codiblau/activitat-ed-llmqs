@@ -13,7 +13,8 @@
 <script>
     const pxRatio     = window.devicePixelRatio || 1;
     const windowWidth = window.innerWidth  * pxRatio;
-    document.querySelector("#result").innerHTML = "Pixel ratio:" + pxRatio + " - Window width: " + windowWidth + "px";
+    const windowHeight = window.innerHeight * pxRatio;
+    document.querySelector("#result").innerHTML = "Pixel ratio:" + pxRatio + " - Window width: " + windowWidth + "px"+ " - Window Height: "+windowHeight+"px";
 </script>
 </body>
 </html>
