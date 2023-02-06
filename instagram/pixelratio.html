@@ -8,7 +8,9 @@
 <p>Device Pixel Ratio:</p>
 <div id="result"></div>
 <script>
-    document.querySelector("#result").innerHTML = window.devicePixelRatio;
+    const pxRatio     = window.devicePixelRatio || 1;
+    const windowWidth = window.innerWidth  * pxRatio;
+    document.querySelector("#result").innerHTML = "Pixel ratio" + pxRatio + "Window width" + windowWidth;
 </script>
 </body>
 </html>
