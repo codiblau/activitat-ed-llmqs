@@ -171,7 +171,14 @@ body>header img{
     height: 30px;
 }
 
+body>header #menu-mobile{
+    display: none;
+}
 
+body>header #barra{
+    background-color: blue;
+    padding: 10px;
+}
 
 @media screen and (max-width: 600px) {
     aside{

@@ -299,5 +299,17 @@
         </div>
     </div>
 </main>
+
+<script>
+    document.querySelector("#barra button").addEventListener("click",function(){
+        const mobile = document.querySelector("#menu-mobile");
+        const visible = mobile.style.display!=='block';
+        if(visible){
+            mobile.style.display = 'block';
+        } else {
+            mobile.style.display = 'none';
+        }
+    })
+</script>
 </body>
 </html>
