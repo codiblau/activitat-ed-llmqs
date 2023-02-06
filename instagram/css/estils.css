@@ -161,7 +161,43 @@ aside>div{
     justify-self: flex-end;
 }
 
+/* Menú mòbil */
+body>header{
+    display: none;
+}
 
+body>header img{
+    width: 30px;
+    height: 30px;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    aside{
+        display: none;
+    }
+
+    body>header{
+        display: block;
+    }
+
+    body {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+    }
+
+    header{
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    main{
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+}
 
 
 
