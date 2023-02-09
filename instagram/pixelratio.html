@@ -14,9 +14,15 @@
     const pxRatio     = window.devicePixelRatio || 1;
     const windowWidth = window.innerWidth  * pxRatio;
     const windowHeight = window.innerHeight * pxRatio;
-    const windowTotal = window.innerWidth / 326  / pxRatio;
-    const windowTotal2 = windowWidth  / 326;
-    document.querySelector("#result").innerHTML = windowTotal+" - "+windowTotal2+"Pixel ratio:" + pxRatio + " - Window width: " + windowWidth + "px"+ " - Window Height: "+windowHeight+"px";
+
+    //physicalPixels = window.devicePixelRatio * idealPixels
+    //idealPixels = physicalPixels / window.devicePixelRatio;
+    const idealPixelsWidth = window.innerWidth / pxRatio;
+    const idealPixelsHeight = window.innerHeight / pxRatio;
+
+    document.querySelector("#result").innerHTML = "Pixel ratio:" + pxRatio + " - Window width: " + windowWidth + "px"+ " - Window Height: "+windowHeight+"px" +
+        " Ideal Pixels width: "+idealPixelsWidth+"px" +
+        " Ideal Pixels height: "+idealPixelsHeight+"px";
 </script>
 </body>
 </html>
