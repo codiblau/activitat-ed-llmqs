@@ -28,7 +28,9 @@
 
     document.querySelector("#result").innerHTML = "Pixel ratio:" + pxRatio +
         " - Window width: " + windowWidth + "px"+
-        " - Window Height: "+windowHeight+"px";
+        " - Window Height: "+windowHeight+"px" +
+        " - Real window width: " + (windowWidth * pxRatio) +
+        " - Real window height: " + (windowHeight * pxRatio);
 </script>
 
 </body>
